@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #header_container{
+        display: flex;
+        padding-left: 100px;
+        padding-top: 10px;
+        gap: 5px;
+      }
+       .parent > .Firstparent{
+        
+        margin-top: 10%;
+        margin-left: 8%;
+        background-color:  #3d97ce 0%, #12debb 100%;
+        /* border: 2px solid pink; */
+        width: 60%;
+        color: #fff;
+        height: auto;
+        font-size: 100%;
+        font-weight: 400;
+        font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;;
+       } 
+     
+     .img{
+        width: auto;
+        /* border: 2px solid red; */
+        margin-left: 15%;
+        margin-right: 60px;
+     }
+     .parent{
+        display: flex;
+        background-image: linear-gradient(to right bottom, rgb(61, 151, 206) 0%, rgb(18, 222, 187) 100%);
+     }
+     .button{
+        border: none;
+    background-color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+     }
+a:link{
+    text-decoration: none;
+    
+}
+.button:hover{
+ background-color: red;
+}
+ul{
+  display: flex;
+  list-style-type: none;
+  padding-top: 30px;
+  gap: 20px;
+}
+.smallparent {
+  display: grid;
+  grid-template-columns: repeat(2, 710px);
+  gap: 10px;
+  padding-left: 1%;
+}
+.smallparent > .subchild{
+  border: 1px solid red;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.childfooter{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.footer{
+  background-color: #F0F1F4;
+}
+h5{
+  border: 1px solid black;
+  background-color: #3d97ce;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 5px;
+}
+    </style>
+</head>
+<body style="background-color: #fff;">
+<header id="header">
+  <div style="background-color: red; height: 50px; color: #fff; text-align: center; padding-top: 5px;">
+  <p>New Mental Refresh Challenge from Haley, our licensed psychologist</p>
+  </div>
+<div id="header_container">
+<div>
+<h1>
+  <a href=" /_"><img src="	https://cloudfront.fitnessblender.com/assets/img/logos/fb-logo.svg" width="200px" height="45px" ></a>
+</h1>
+</div>
+<nav>
+   <ul > 
+     <li>
+   <a href="https://www.fitnessblender.com/videos/browse"><span style="color: black;">WORKOUTS ▼</span> </a>
+    </li> 
+    <li >
+   <a href="https://www.fitnessblender.com/programs-challenges"><span style="color: black;">PRGORAMS ▼ </span></a>
+    </li>
+    <li >
+   <a href="https://www.fitnessblender.com/healthy-living"><span style="color: black;">HEALTHY LIVING ▼ </span></a>
+    </li>
+   <li>
+   <a href="https://www.fitnessblender.com/community"><span style="color: black;"> COMMUNITY ▼ </span></a>
+   </li>
+   <li>
+    <a href="https://www.fitnessblender.com/page/about-fitness-blender"><span style="color: black;">ABOUT ▼</span></a>
+   </li>
+   <li>
+    <a href="https://www.fitnessblender.com/store"><span style="color: black;">STORE </span></a>
+   </li>
+   <li>
+    <a href="https://www.fitnessblender.com/membership"><span style="color: #4296cb;">MEMBERSHIP ▼ </span></a>
+   </li>
+   <li>
+    <div>
+    <a href="/">Hi! Sign In <br/> MY FITNESS ▼</a>
+    </div>
+   </li>
+   <li>
+    <a href="/"><img width="20px" height="20px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAACUCAMAAAA02EJtAAAAZlBMVEX///8AAAD7+/v09PTe3t5UVFRBQUH39/fZ2dmhoaGmpqbMzMx7e3tEREQ4ODi5ublKSkoUFBSTk5PS0tLn5+fFxcUaGhpgYGDt7e0fHx+ZmZkzMzONjY1vb28lJSWurq6EhIQLCws/RvFYAAAEO0lEQVR4nO2b6ZaqOhCFZRCZBwGZROD9X/LQVALYDUpyNYG76vt11mmz2BZVO0klnk4IgiAIgiAIgiAIgiAI8v9Dy/OkJ9dU2Upekjhp09ZnzzfCzC2D1NRkK1omb67ZQ5nTea7tyJb1F7M935QF/LqRLe2ZJCuWdEJsjUC2vIncXdVJQpvuo8YuTfWkq6h8w6ies1a567Jl9iT3blJU1aUdpE4cp0FjteeZ1lB+fekzPW4a57M/XXSnnAL+aCQnQRzO3vFfF1XzYBQblVK1plRI1OZrnwkiKra9iNT2jGMQEedXmai51Mnu0uJqkjyN3NWQDqiNT7TagpT9UZARd7LeBiv2iFZJs8GdKN1S2glJas/8vq6/pCRQ1qZP59TQJJSWRkqq3Pj5hMxfElYvV3hytnlAACuvMPmiqEVM8H5j+4Mvd5aE+SAWe0WTOfgheGugQ1BdpsfakQxzhfK/pWyjIKzRdyStoNVczhNA1gj11gSCymw8YALuNyStAeEJX0/9C7RgG9+QtEbNGR0dPEBkBkScE4/aDXUl0gMgVdkNUoXX0X5c0Crx8MCKY6Q9jKw/rmiVBpb+HCMdWDiIm7BKbs+BujqL6wqA59w5RoLUUJwF1Ewr1Tn64B1G/HFJa9Tcqzm9ECwV2mlXjpF6J3iH1f7HsgrFlZXFuFeZMMEBmBcP3MBq1ecYGYieAmANWHCM5E8dXmA1z7gH6FF9bpvjJeScAzR4HezfkR9oAmTMjT1YPFQi96zgORVzdHxu6+Am97gyAKxKbDtQBWdlnSBJl/M7mtaIoVnG1t53HsKtqkcDg6xYJnPSPBDbBugJIEI1Q1jJ+QXLkI9ANnQMDSiTHAiIWwBSnIrtdeakpmScXpFe8Mb+g0qOjAWu/yYu5CBw00ZJJV+skHPEQgx9i1aNdKwVV9IhG+lBKtW7U+mE1CDXEvcz2ETBmxnWGS8HdLKOA0+Xa0eTwFldLSWtMhHZso5ZteuooU0XW9im/XwH4yFN68WeRLj275MhNbh7yi8e0nJgrK2fTAzrMqWbUdVs3Pm9Kzcls1Uk/OBqZH4lpBdSVF54PnvV49bN/7/pq8uf/i0J1fKV19yyITVietNBXlxPelu9ENpldIqKyXe6SautnvRqrAiN6mDqpdAckOcDPaoe1AtCPevpPtN426WQmAOnn5urTjvP2iizk/x39Mbakqt1QP25udYE8VoHbbzGsgOt76Bau/e3c6RDfaCwJF4R28hOamsTVGsksiXIyR7mra2MNzTlXr/cBNUalfuvrXisrQPElfjr7Ui1xXNWJxgzPJBWuoE4QG2Z3nF8wBxr6zg+EB0hX2lt8VzaEMxYW9f958Ckdac/epuhH8kH6NrlCDngHae2xsbXjn6ctwapLaGH2rwMcWW7Zi4NPVTe/MJoP+jWUZQiCIIgCIIgCIIgCIIgyAL/AG9TK82bfKS5AAAAAElFTkSuQmCC"/></a>
+   </li>
+   <li>
+    <a href="https://www.fitnessblender.com/store/cart"> 🧺</a>
+   </li>
+  </ul>
+</nav>
+</div>
+</header>
+<div class="parent">
+    <div class="Firstparent">
+            <h1 style="text-align: left;">
+            Feel Great.
+              <br>
+              Body and Mind.
+            </h1>
+            <p style="font-size: x-large; line-height: 1.6em;">
+                Choose from hundreds of workouts, healthy <br>
+                recipes, relaxing meditations, and expert<br>
+                 articles, for a whole bodyand mind<br> approach to feeling great.
+            </p>
+       <div class="link" > 
+          <button class="button">
+            <a href="https://www.fitnessblender.com/membership"> <span style="color: black;">Join Now </span></a>
+          </button>
+       </div>
+    </div>
+            <div class="img">
+                <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/team-2023-720.webp" />
+            </div>
+     </div>    
+     <br/>    
+    <div class="smallparent" style="border: 1px solid black;">      
+       <div class="subchild" style="background-color: #F2E6F7;">
+           <div style="text-align: center;">
+              <h2>FB <span style="color: blue;">Plus  </span> Passes</h2>
+              <p>Passes give you full access to everything FB Plus has <br/>
+               to offer, without a long-term subscription.
+              </p>
+              <br/>
+              <a href="https://www.fitnessblender.com/store#store-passes"><p style="color: blue">Buy a Pass</p></a>
+           </div>
+           <div>
+               <a href="https://www.fitnessblender.com/store#store-passes"><img src="https://cloudfront.fitnessblender.com/assets/img/homepage/passes-720.webp"/></a>
+           </div>
+           <br><br><br><br>
+       </div>
+       <div class="subchild">
+         <div style="text-align: center;">
+         <h2>Workout Videos </h2>
+         <p>Exercise with certified personal trainer's whether you're <br/>
+          at home or on the road. 
+        </p>
+        <br/>
+        <a href="https://www.fitnessblender.com/videos">Find a Workout</a>
+        </div>
+        <div>
+         <a href="https://www.bing.com/images/search?view=detailv2&form=SBIHVR&iss=sbi&q=imgurl:https%3A%2F%2Fcloudfront.fitnessblender.com%2Fassets%2Fimg%2Fhomepage%2Fworkouts-1440.png&pageurl=https%3A%2F%2Fwww.fitnessblender.com%2F&pagetl=Fitness+Blender&imgalt=Tasha+doing+a+Fitness+Blender+workout+video&imgsz=720x360&selectedindex=0&id=https%3A%2F%2Fcloudfront.fitnessblender.com%2Fassets%2Fimg%2Fhomepage%2Fworkouts-1440.png&ccid=A58M7%2FbN&simid=607996928408231867&ck=CF9F9C5329355A211F87792E7B9472E9&thid=OIP.A58M7_bN1yozPTt92IEJQAHaDt&mediaurl=https%3A%2F%2Fcloudfront.fitnessblender.com%2Fassets%2Fimg%2Fhomepage%2Fworkouts-1440.png&exph=720&expw=1440&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.039f0ceff6cdd72a333d3b7dd8810940%3Frik%3DULIqRpMwPcA0vQ%26pid%3DImgRaw%26r%3D0&vt=2&sim=11"><img src="https://cloudfront.fitnessblender.com/assets/img/homepage/workouts-720.webp"/></a>
+        </div>
+       </div>
+       <div class="subchild">
+        <div  style="text-align: center;">
+          <h2>Programs</h2>
+          <p>Professionally designed programs take the guesswork<br/> out of exercising.</p>
+          <br/>
+          <a href="https://www.fitnessblender.com/plans">Browse All Programs</a>
+        </div>
+        <div>
+          <a href="https://www.bing.com/images/search?view=detailv2&form=SBIHVR&iss=sbi&q=imgurl:https%3A%2F%2Fcloudfront.fitnessblender.com%2Fassets%2Fimg%2Fhomepage%2Fprograms-1440.png&pageurl=https%3A%2F%2Fwww.fitnessblender.com%2F&pagetl=Fitness+Blender&imgalt=Stacked+cards+of+Fitness+Blender+workout+program&imgsz=720x359&selectedindex=0&id=https%3A%2F%2Fcloudfront.fitnessblender.com%2Fassets%2Fimg%2Fhomepage%2Fprograms-1440.png&ccid=5ztDoYHD&simid=608045414326673417&ck=5861372EC7339F8B02188EC95D8D0C62&thid=OIP.5ztDoYHDWfps_JXomeGtKwAAAA&mediaurl=https%3A%2F%2Fcloudfront.fitnessblender.com%2Fassets%2Fimg%2Fhomepage%2Fprograms-1440.png&exph=237&expw=474&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.e73b43a181c359fa6cfc95e899e1ad2b%3Frik%3DhEaQ1FbWJNURfA%26pid%3DImgRaw%26r%3D0&vt=2&sim=11"><img src="https://cloudfront.fitnessblender.com/assets/img/homepage/programs-720.webp"/></a>
+        </div>
+       </div>
+       <div class="subchild" style="background-color: black;">
+        <div  style="text-align: center; background-color: black;">
+          <h2 style="color: #fff;">Wellness Articles</h2>
+          <p style="color: #fff;">Research-backed articles to help you care for you <br/>body and mind.</p>
+          <br/>
+          <a href="https://www.fitnessblender.com/articles">Learn from Experts</a>
+        </div>
+        <div>
+          <a href="https://www.bing.com/images/search?view=detailv2&form=SBIHVR&iss=sbi&q=imgurl:https%3A%2F%2Fcloudfront.fitnessblender.com%2Fassets%2Fimg%2Fhomepage%2Fprograms-1440.png&pageurl=https%3A%2F%2Fwww.fitnessblender.com%2F&pagetl=Fitness+Blender&imgalt=Stacked+cards+of+Fitness+Blender+workout+program&imgsz=720x359&selectedindex=0&id=https%3A%2F%2Fcloudfront.fitnessblender.com%2Fassets%2Fimg%2Fhomepage%2Fprograms-1440.png&ccid=5ztDoYHD&simid=608045414326673417&ck=5861372EC7339F8B02188EC95D8D0C62&thid=OIP.5ztDoYHDWfps_JXomeGtKwAAAA&mediaurl=https%3A%2F%2Fcloudfront.fitnessblender.com%2Fassets%2Fimg%2Fhomepage%2Fprograms-1440.png&exph=237&expw=474&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.e73b43a181c359fa6cfc95e899e1ad2b%3Frik%3DhEaQ1FbWJNURfA%26pid%3DImgRaw%26r%3D0&vt=2&sim=11"><img src="https://cloudfront.fitnessblender.com/assets/img/homepage/articles-1440.webp" height="360px" width="709px"/></a>
+        </div>
+       </div>
+       <div class="subchild" style="background-color: #D8D9DA;">
+        <div  style="text-align: center; background-color: #D8D9DA;">
+          <h2 >Healthy Recipes</h2>
+          <p>Fuel your day with recipes by Registered Dietitians and  <br/>professional chefs.</p>
+          <br/>
+          <a href="https://www.fitnessblender.com/healthy-living/healthy-recipes">Find a Recipe</a>
+        </div>
+        <div>
+          <a href="https://www.bing.com/images/search?view=detailv2&form=SBIHVR&iss=sbi&q=imgurl:https%3A%2F%2Fcloudfront.fitnessblender.com%2Fassets%2Fimg%2Fhomepage%2Fprograms-1440.png&pageurl=https%3A%2F%2Fwww.fitnessblender.com%2F&pagetl=Fitness+Blender&imgalt=Stacked+cards+of+Fitness+Blender+workout+program&imgsz=720x359&selectedindex=0&id=https%3A%2F%2Fcloudfront.fitnessblender.com%2Fassets%2Fimg%2Fhomepage%2Fprograms-1440.png&ccid=5ztDoYHD&simid=608045414326673417&ck=5861372EC7339F8B02188EC95D8D0C62&thid=OIP.5ztDoYHDWfps_JXomeGtKwAAAA&mediaurl=https%3A%2F%2Fcloudfront.fitnessblender.com%2Fassets%2Fimg%2Fhomepage%2Fprograms-1440.png&exph=237&expw=474&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.e73b43a181c359fa6cfc95e899e1ad2b%3Frik%3DhEaQ1FbWJNURfA%26pid%3DImgRaw%26r%3D0&vt=2&sim=11"><img src="https://cloudfront.fitnessblender.com/assets/img/homepage/recipes-1440.webp" height="360px" width="709px"/></a>
+        </div>
+       </div>
+       <div class="subchild" style="background-color: #EFFBFF;">
+        <div  style="text-align: center; background-color: #EFFBFF;">
+          <h2 >Supportive Community</h2>
+          <p>Stay motivated and engaged with a little help from a <br/>supportive community of other members.</p>
+          <br/>
+          <a href="https://www.fitnessblender.com/membership">Become a Member</a>
+        </div>
+        <div>
+          <a href="https://cloudfront.fitnessblender.com/assets/img/homepage/community-1440.webp"><img src="https://cloudfront.fitnessblender.com/assets/img/homepage/community-1440.webp" height="360px" width="709px"/></a>
+        </div>
+       </div>
+    </div>
+    <br/>
+    <div class="secondsmallparent" style="border: 1px solid black;">
+       <div>
+        <h1>Not sure where to start?</h1>
+        <p>Programs offer day-to-day guidance on an interactive calendar to keep you on track. </p>
+       </div>
+       <br/>
+       <div class="footer">
+        <div style="border: 1px solid black;">
+            <div><h4>Join a Free Challenge</h4></div>
+            <div>
+              <a href="https://www.fitnessblender.com/plans/fitness-blender-s-free-2-week-challenge-strength-training-cardio-and-mobility-workouts-for-a-strong"><img src="https://d18zdz9g6n5za7.cloudfront.net/plan/640/640-15649-fitness-blenders-free-2-week-challenge-98aa.jpg" width="350px"/></a>
+            </div>
+            <div style="border: 1px solid black; width: 350px;">
+              <a href="">
+                <p style="color: black;">Fitness Blender's Free 2 Week <br/> Challenge <br/> 
+                Strength Training, Cardio, and Mobility <br/> Workouts for a strong Body and  Mind <br/> <br/>
+               <span style="color: blue;">31 Min/Day * 2 Weeks </span></p>
+               </a>
+            </div>
+            <div style="border: 1px solid black; padding: 4px 2px 16px 4px ;">
+              Available with a Free Membership 
+            </div>
+        </div>
+        <div style="border: 1px solid black;">
+          <div><h4>Start With The Basics</h4></div>
+          <div>
+            <a href="https://www.fitnessblender.com/plans/5-day-challenge-trainer-series-essentials-with-erica-beginner-friendly-total-body-strength-training"><img src="https://d18zdz9g6n5za7.cloudfront.net/plan/640/640-15647-5-day-challenge-trainer-series-essentials-with-erica-8eba.jpg" width="350px"/></a>
+          </div>
+          <div style="border: 1px solid black; width: 350px;">
+            <a href="">
+              <p style="color: black;">5 Day Challenge Trainer Series: <br/> Essentials with Erica <br/> 
+              Beginner-Friendly Total Body Strength <br/> Training with Cardio <br/> <br/>
+             <span style="color: blue;">35 Min/Day * 1 Week </span></p>
+             </a>
+          </div>
+          <div class="childfooter" style="border: 1px solid black; padding: 4px 2px 16px 4px ;">
+            <div>
+            Available with FB Plus as low as:  
+            </div>
+            <div style="color: red;">$3.19</div>
+            <br/>
+           </div>
+            <h5>ADD TO BAG</h5>
+           </div>
+
+           <div style="border: 1px solid black;">
+            <div><h4>Get Stronger</h4></div>
+            <div>
+              <a href="https://www.fitnessblender.com/plans/5-day-challenge-trainer-series-level-up-with-tasha-time-under-tension-strength-with-cardio-for"><img src="https://d18zdz9g6n5za7.cloudfront.net/plan/640/640-15454-5-day-challenge-trainer-series-level-up-with-tasha-a267.jpg" width="350px"/></a>
+            </div>
+            <div style="border: 1px solid black; width: 350px;">
+              <a href="">
+                <p style="color: black;">5 Day Challenge Trainer Series: <br/> Level Up with Tasha <br/> 
+                Time Under Tension Strength with  <br/> Cardio for Muscle Growth<br/> <br/>
+               <span style="color: blue;">42 Min/Day * 1 Week </span></p>
+               </a>
+            </div>
+            <div class="childfooter" style="border: 1px solid black; padding: 4px 2px 16px 4px ;">
+              <div>
+              Available with FB Plus as low as:  
+              </div>
+              <div style="color: red;">$3.19</div>
+              <br/>
+             </div>
+              <h5>ADD TO BAG</h5>
+             </div>
+
+             <div style="border: 1px solid black;">
+              <div><h4>Commit to 4 Weeks </h4></div>
+              <div>
+                <a href="https://www.fitnessblender.com/plans/fb-fit-round-4-strength-hiit-cardio-mobility-intense-lengthy-workouts-our-most-challenging-program"><img src="https://d18zdz9g6n5za7.cloudfront.net/plan/640/640-17367-fb-fit-round-4-strength-hiit-cardio-and-mobility-aa11.jpg" width="350px"/></a>
+              </div>
+              <div style="border: 1px solid black; width: 350px;">
+                <a href="">
+                  <p style="color: black;"> FB Fit Round 4 Strength, HIIT: <br/> Cardio, & Mobility <br/> 
+                  intense, Lengthy Workouts: Our Most <br/> Challenging Program Yet? <br/> <br/>
+                 <span style="color: blue;">48 Min/Day * 4 Weeks </span></p>
+                 </a>
+              </div>
+              <div class="childfooter" style="border: 1px solid black; padding: 4px 2px 16px 4px ;">
+                <div>
+                Available with FB Plus as low as:  
+                </div>
+                <div style="color: red;">$9.59</div>
+                <br/>
+               </div>
+                <h5>ADD TO BAG</h5>
+               </div>
+        
+    </div>
+</body>
+</html>
